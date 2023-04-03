@@ -1,6 +1,6 @@
 :root {
     --main-color: #fff;
-    --main-color-two: #509975;
+    --main-color-two: #c53b3b;
     --secondary-color: #c5c5c5;
     --section-padding: 100px;
     --main-duration: .5s;
@@ -287,7 +287,7 @@ header nav .icon span {
 .landing .image {
     background-color: #333;
     background-image: url(/img/landing.jpg);
-    background-position: center;
+    background-position: right;
     background-size: cover;
     filter: grayscale(70%);
     -webkit-filter: grayscale(70%);
@@ -786,7 +786,7 @@ header nav .icon span {
 }
 
 .contact .container .card:hover {
-    border-bottom: 3px solid #246e49;
+    border-bottom: 3px solid #942626;
 }
 
 .contact .container .content .card .icon {
@@ -799,7 +799,7 @@ header nav .icon span {
 }
 
 .contact .container .content .card:hover .icon {
-    color: #246e49;
+    color: #942626;
 }
 
 
