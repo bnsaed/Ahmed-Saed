@@ -169,6 +169,7 @@ header .container nav ul a {
     -ms-transition: var(--main-duration);
     -o-transition: var(--main-duration);
 }
+
 header .container nav ul a:hover {
     color: var(--main-color-two);
 }
@@ -310,7 +311,6 @@ header nav .icon span {
 
 .landing .intro-text h1 {
     margin: 0;
-
     font-size: 80px;
     color: var(--main-color-two);
     font-family: sans-serif;
@@ -323,6 +323,10 @@ header nav .icon span {
 
 
 @media (max-width: 776px) {
+    .landing .image {
+        background-position: right;
+    }
+
     .landing .intro-text h1 .one {
         display: none;
     }
@@ -331,9 +335,10 @@ header nav .icon span {
 .landing .intro-text p {
     font-size: 14px;
     line-height: 1.5;
-    color: #ddd;
+    color: var(--main-color);
     text-align: center;
     margin-bottom: 50px;
+    font-weight: bold;
 }
 
 @media (max-width: 767px) {
@@ -404,7 +409,7 @@ header nav .icon span {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb( 255 255 255/ 20%);
+    background-color: rgb(255 255 255/ 20%);
     width: 0;
     height: 0;
     opacity: 0;
@@ -425,11 +430,21 @@ header nav .icon span {
 }
 
 .gallery .box .image:hover img {
-    transform: /*rotate(5deg)*/ scale(1.1);
-    -webkit-transform: /*rotate(5deg)*/ scale(1.1);
-    -moz-transform: /*rotate(5deg)*/ scale(1.1);
-    -ms-transform: /*rotate(5deg)*/ scale(1.1);
-    -o-transform: /*rotate(5deg)*/ scale(1.1);
+    transform:
+        /*rotate(5deg)*/
+        scale(1.1);
+    -webkit-transform:
+        /*rotate(5deg)*/
+        scale(1.1);
+    -moz-transform:
+        /*rotate(5deg)*/
+        scale(1.1);
+    -ms-transform:
+        /*rotate(5deg)*/
+        scale(1.1);
+    -o-transform:
+        /*rotate(5deg)*/
+        scale(1.1);
 }
 
 .about {
@@ -493,7 +508,9 @@ header nav .icon span {
 }
 
 @media (max-width: 991px) {
-    .about .image::before, .about .image::after {
+
+    .about .image::before,
+    .about .image::after {
         display: none;
     }
 }
@@ -521,8 +538,18 @@ header nav .icon span {
     -o-transform: scale(1.05);
 }
 
+.about .about-content .image img:active {
+    transform: scale(1.09);
+    -webkit-transform: scale(1.09);
+    -moz-transform: scale(1.09);
+    -ms-transform: scale(1.09);
+    -o-transform: scale(1.09);
+}
+
 @media (max-width: 991px) {
-    .about .about-content .image img:hover {
+
+    .about .about-content .image img:hover,
+    .about .about-content .image img:active {
         transform: scale(1);
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
@@ -690,6 +717,8 @@ header nav .icon span {
     -o-transition: var(--main-duration);
 }
 
+
+
 @media (min-width: 768px) {
     .contact .info .links .link {
         font-size: 37px;
@@ -724,7 +753,9 @@ header nav .icon span {
 }
 
 @media (max-width: 767px) {
-    .contact .label, .contact .link {
+
+    .contact .label,
+    .contact .link {
         font-size: 40px;
     }
 }
