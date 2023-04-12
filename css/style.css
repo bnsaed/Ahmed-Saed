@@ -833,11 +833,12 @@ header nav .icon span {
     user-select: text;
 }
 
-.contact .container .content .card .text p {
+.contact .container .content .card .text a {
     color: var(--secondary-color);
     line-height: 1.6;
     margin-bottom: 0;
     text-transform: capitalize;
+    text-decoration: none;
 }
 
 
