@@ -835,10 +835,11 @@ header nav .icon span {
 
 .contact .container .content .card .text a {
     color: var(--secondary-color);
-    line-height: 1.6;
+    line-height: 1.7;
     margin-bottom: 0;
     text-transform: capitalize;
     text-decoration: none;
+    display: block;
 }
 
 
